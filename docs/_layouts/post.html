@@ -24,10 +24,10 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
-        <a href="{% link index.md %}" class={% if page.pagename == "Home" %}"primarybtn"{% else %}"btn"{% endif%}>Home</a>
-        <a href="{% link posts.md %}" class={% if page.pagename == "Posts" %}"primarybtn"{% else %}"btn"{% endif%}>Posts</a>
-        <a href="{% link resources.md %}" class={% if page.pagename == "Resources" %}"primarybtn"{% else %}"btn"{% endif%}>Resources</a>
-        <a href="{% link contact.md %}" class={% if page.pagename == "Contact" %}"primarybtn"{% else %}"btn"{% endif%}>Contact</a>
+        <a href="{% link index.md %}" class="btn">Home</a>
+        <a href="{% link posts.md %}" class="btn">Posts</a>
+        <a href="{% link resources.md %}" class="btn">Resources</a>
+        <a href="{% link contact.md %}" class="btn">Contact</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -37,29 +37,7 @@
 
     <main id="content" class="main-content" role="main">
       This is {{ page.pagename }}.
-      <p />
       {{ content }}
-
-      <h2>Latest Posts</h2>
-
-  <div>&nbsp;</div>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
-
-        {{ post.excerpt | markdownify | truncatewords: 30 }}
-
-      </li>
-    {% endfor %}
-  </ul>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
