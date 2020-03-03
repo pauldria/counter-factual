@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-pagename: Home
+pagename: Posts
 ---
-
-Hello World!
+Hello, world!
