@@ -5,4 +5,5 @@
 layout: default
 pagename: Home
 ---
-Hello, world!
+
+Hello World!
