@@ -36,10 +36,10 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
-        <a href="{% link index.md %}" class={% if page.pagename == "Home" %}"primarybtn"{% else %}"btn"{% endif%}>Home</a>
-        <a href="{% link posts.md %}" class={% if page.pagename == "Posts" %}"primarybtn"{% else %}"btn"{% endif%}>Posts</a>
-        <a href="{% link resources.md %}" class={% if page.pagename == "Resources" %}"primarybtn"{% else %}"btn"{% endif%}>Resources</a>
-        <a href="{% link contact.md %}" class={% if page.pagename == "Contact" %}"primarybtn"{% else %}"btn"{% endif%}>Contact</a>
+        <a href="{{ site.baseurl }}{% link index.md %}" class={% if page.pagename == "Home" %}"primarybtn"{% else %}"btn"{% endif%}>Home</a>
+        <a href="{{ site.baseurl }}{% link posts.md %}" class={% if page.pagename == "Posts" %}"primarybtn"{% else %}"btn"{% endif%}>Posts</a>
+        <a href="{{ site.baseurl }}{% link resources.md %}" class={% if page.pagename == "Resources" %}"primarybtn"{% else %}"btn"{% endif%}>Resources</a>
+        <a href="{{ site.baseurl }}{% link contact.md %}" class={% if page.pagename == "Contact" %}"primarybtn"{% else %}"btn"{% endif%}>Contact</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
