@@ -4,5 +4,6 @@
 
 layout: default
 pagename: Posts
+permalink: /posts/
 ---
 Hello, world!

@@ -4,5 +4,6 @@
 
 layout: page
 pagename: Contact
+permalink: /contact/
 ---
 Hello, world!

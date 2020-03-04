@@ -4,5 +4,6 @@
 
 layout: page
 pagename: Resources
+permalink: /resources/
 ---
 Hello, world!
