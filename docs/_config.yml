@@ -21,7 +21,7 @@
 title: Counter-Factual
 email: pauldria@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  _Counter-Factual_ (n): What you wish you knew.
+  A/B testing, causality, and what you really know
 #baseurl: "/counter-factual" # the subpath of your site, e.g. /blog
 url: "https://www.counter-factual.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
